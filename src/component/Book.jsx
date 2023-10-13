@@ -1,10 +1,11 @@
 import React from 'react'
-import Book from './Book'
 
-export default function App() {
+const Book = () => {
   return (
     <div>
       
     </div>
   )
 }
+
+export default Book;

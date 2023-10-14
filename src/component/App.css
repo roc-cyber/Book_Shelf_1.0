@@ -1,5 +1,9 @@
 .Book-header{
+    color: #d4195a;
     text-align: center;
-    background-color: blueviolet;
-    
+    background-color: #9319d4;
+}
+
+.header-author{
+    color: #e52165;
 }

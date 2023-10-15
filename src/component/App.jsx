@@ -9,16 +9,19 @@ export default function App() {
   return (
     <div>
       <h1 className='Book-header'>Book List</h1>
-      {Books.map((book,index)=>
-        <Book 
-          //key={index}
-          key={book.id}
-          author={book.author}
-          title={book.title}
-          url={book.url}
-        />
-      )}
-      
+      <p className='Book-container'>
+        {Books.map((book)=>
+          <Book 
+            //key={index}
+            key={book.id}
+            author={book.author}
+            title={book.title}
+            url={book.url}
+            image={book.image}
+            subtitle={book.subtitle === ""? "is Empty" : book.subtitle}
+          />
+        )}
+      </p>
     </div>
   )
 }

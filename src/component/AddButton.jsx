@@ -14,8 +14,8 @@ function Add(){
   return (
     <div>
       <h3 style={{color:'silver-black'}}>Your Review: {newName}</h3>
-      <input type='text' placeholder='Please rate the Book out of 5*****' onChange={handleChange} value={name}/>{' '}
-      <Button variant="outline-success" onClick={handleClick}>Success</Button>
+      <input className='input' type='text' placeholder='Please rate the Book out of 5*****' onChange={handleChange} value={name}/>{' '}
+      <Button className='Add-button' variant="outline-success" onClick={handleClick}>Success</Button>
       
     </div>
   )

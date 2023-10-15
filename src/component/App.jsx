@@ -2,13 +2,13 @@ import React from 'react'
 import Book from './Book'
 import Books from '../BookObject'
 import './App.css';
+import Header from './Header';
 
 export default function App() {
 
-
   return (
-    <div>
-      <h1 className='Book-header'>BookShelf</h1>
+    <div className='Whole-UI'>
+      <Header />
       <p className='Book-container'>
         {Books.map((book)=>
           <Book 

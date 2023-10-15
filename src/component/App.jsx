@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div>
-      <h1 className='Book-header'>Book List</h1>
+      <h1 className='Book-header'>BookShelf</h1>
       <p className='Book-container'>
         {Books.map((book)=>
           <Book 

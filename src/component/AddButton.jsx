@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Button from 'react-bootstrap/Button';
 
 function Add(){
   const [name,setName]=useState('');
@@ -12,9 +13,10 @@ function Add(){
   }
   return (
     <div>
-      <h3 style={{color:'#f52265'}}>Please give your review {newName}</h3>
-      <input type='text' placeholder='Please rate the Book out of 5*****' onChange={handleChange} value={name}/>
-      <button onClick={handleClick}>RATE</button>
+      <h3 style={{color:'silver-black'}}>Your Review: {newName}</h3>
+      <input type='text' placeholder='Please rate the Book out of 5*****' onChange={handleChange} value={name}/>{' '}
+      <Button variant="outline-success" onClick={handleClick}>Success</Button>
+      
     </div>
   )
 }

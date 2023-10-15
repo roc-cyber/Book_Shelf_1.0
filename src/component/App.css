@@ -1,17 +1,62 @@
-.Book-header{
-    color: #d4195a;
+.Book-header {
+    color: plum;
+    font-style: italic;
+    font-weight: bolder;
     text-align: center;
-    background-color: #9319d4;
-}
-
-.header-author{
-    color: #e52165;
-}
-
-.Book-object{
-    background-color: aqua;
-}
-
-.image-model{
     
+}
+
+.header-author {
+    color: #e58021;
+    text-align: center;
+    font-style: italic;
+}
+
+.Book-object {
+    background-color: plum;
+    /*box-shadow: 10px 10px rgb(230, 173, 189);*/
+    padding: 15px;
+    max-width: 300px;
+    margin: 10px; /* Add spacing here */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added position relative */
+}
+
+.image-model {
+    display: block;
+    margin: 10px auto; /* Center the image */
+    max-width: 100%; /* Make the image fit the container width */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4); /* Add a deeper shadow behind the image */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transitions for smooth effects */
+}
+
+.image-model:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.6); /* Modify shadow on hover */
+}
+
+.book-text {
+    text-align: center; /* Center-align text */
+    margin: 10px; /* Add spacing around text */
+    font-style: italic;
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.Book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*background-color: #2196F3;*/
+    padding: 10px;
 }

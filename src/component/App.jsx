@@ -3,6 +3,7 @@ import Book from './Book'
 import Books from '../BookObject'
 import './App.css';
 import Header from './Header';
+import Footer from './Footer';
 
 export default function App() {
 
@@ -22,6 +23,7 @@ export default function App() {
           />
         )}
       </p>
+      <Footer />
     </div>
   )
 }

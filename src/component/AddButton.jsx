@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Button from 'react-bootstrap/Button';
 
-function Add(){
+function Add({key,author}){
   const [count, setcount]=useState(0);
 
   function inc(){
@@ -17,10 +17,10 @@ function Add(){
   return (
     <div>
       <button className='Add-count' onClick={inc}>+</button>
-      <h3 style={{color:'silver-black'}}>Quantity: {count}</h3>
-      <button className='remove-count' onClick={dec}>-</button>
-      <Button className='Add-button1' variant="outline-success" onClick={()=>console.log('Added to the Cart!')}>Add to Chart</Button>{'   '}
-      <Button className='Add-button2' variant="outline-success" onClick={()=>console.log('Your order is placed, Successfully!!!')}>Placed the order</Button>
+      <h5 style={{color:'silver-black'}}>Quantity: {count}</h5>
+      <button className='remove-count' onClick={dec}>-</button>{' '}
+      <Button className='Add-button1' variant="outline-success" onClick={()=>console.log(`${count} of books has been added to the Cart!`)}>Add to Chart</Button>{'   '}
+      <Button className='Add-button2' variant="outline-success" onClick={()=>console.log(`${author} book order is placed, Successfully!!!`)}>Placed the order</Button>
     </div>
   )
 }

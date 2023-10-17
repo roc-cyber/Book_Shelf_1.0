@@ -290,7 +290,18 @@
 }
 
 .price-tag{
-  color: black;
-  text-decoration: solid;
-  font-variant-caps: all-petite-caps;
+  color: black; /* Set the text color to black */
+  text-decoration: solid; /* Add a solid text decoration (e.g., underline) */
+  font-variant-caps: all-petite-caps; /* Apply the all-petite-caps font variant */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 5px; /* Add some space above the price tag */
+  display: inline-block; /* Ensure it's displayed inline with other content */
+  padding: 5px 10px; /* Add padding to create a visually appealing box around the price */
+  background-color: #f2f2f2; /* Set a background color */
+  border: 2px solid #d1d1d1; /* Add a border */
+  border-radius: 5px; /* Round the corners of the price tag */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transitions for hover effect */
+
 }

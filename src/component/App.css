@@ -288,3 +288,9 @@
     margin-top: 10px; /* Add some space above the copyright notice */
     font-style: italic; /* Make it italic if desired */
 }
+
+.price-tag{
+  color: black;
+  text-decoration: solid;
+  font-variant-caps: all-petite-caps;
+}

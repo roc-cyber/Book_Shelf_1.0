@@ -19,6 +19,7 @@ export default function App() {
             title={book.title}
             url={book.url}
             image={book.image}
+            price={book.price}
             subtitle={book.subtitle === ""? "is Empty" : book.subtitle}
           />
         )}

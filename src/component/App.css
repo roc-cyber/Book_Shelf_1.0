@@ -139,6 +139,7 @@
   }
   
 
+  
 .book-text {
     text-align: center; /* Center-align text */
     margin: 10px; /* Add spacing around text */
@@ -162,7 +163,7 @@
 
 .Add-button1 {
     background: linear-gradient(60deg, #00b4db, #0083b0); /* Gradient color at a 60-degree angle */
-    color: black; /* Text color */
+    color: white; /* Text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 5px; /* Rounded corners */
@@ -304,4 +305,20 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transitions for hover effect */
 
+}
+
+.Order-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Set the background color if needed */
+}
+
+.Order-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border around the content if desired */
+  background-color: #fff; /* Set the background color of the content */
 }

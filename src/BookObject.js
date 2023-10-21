@@ -47,7 +47,7 @@ const Books =
         },
         {
           "id": "6",
-          "title": "An Introduction to C &amp; GUI Programming",
+          "title": "An Introduction to C & GUI Programming",
           "subtitle": "",
           "author": "Simon Long",
           "image": "https://www.dbooks.org/img/books/1912047446s.jpg",

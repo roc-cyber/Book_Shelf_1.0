@@ -12,7 +12,7 @@ const Book = ({author,title,url,subtitle,image,key,price}) => {
       <img className='image-model' src={image} alt='Book' />
       <p className='book-text'>My Book subtitle {subtitle}, please refer to this link {<a href={url}>{author}</a>}</p>
       <span className='price-tag'>Price of the book: {price}</span>
-      <Add key={key} author={author}/>
+      <Add key={key} title={title} author={author}/>
       
     </div>
   )

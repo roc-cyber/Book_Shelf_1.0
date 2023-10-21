@@ -42,7 +42,7 @@ function Add({key,title,author}){
   
   return (
     <div className='addbutton'>
-      <Button className='Add-button1' variant="outline-success" onClick={handleAddToCart}><NavLink to='/cart' style={style}>Add to Cart</NavLink></Button>{'   '}
+      <Button className='Add-button1' variant="outline-success" onClick={handleAddToCart}><NavLink to='/cart' style={style}>🛒 Add to Cart</NavLink></Button>{'   '}
       <Button className='Add-button2' variant="outline-success" onClick={handleOrder}><NavLink to='/Order' style={style}>Buy Now 🔥</NavLink></Button>
     </div>
   )

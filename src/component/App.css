@@ -44,7 +44,7 @@
   
 
 .header-author {
-    color: #e58021;
+    color: #d121e5;
     text-align: center;
     font-style: italic;
 }
@@ -52,10 +52,11 @@
 /* Existing CSS styles */
 
 .header-author {
-    color: #e58021;
+    color: #310131;
     text-align: center;
     font-style: italic;
     position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header-author::before {
@@ -67,7 +68,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    animation: glitter 2s infinite;
+    animation: glitter 1s infinite;
 }
 
 @keyframes glitter {

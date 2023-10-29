@@ -4,7 +4,7 @@ import AppContext from '../AppContext';
 import { NavLink } from 'react-router-dom';
 
 
-function Cart({author}) {
+function Cart({author,price}) {
 const style ={
   color : 'white',
   textDecoration: 'none'
@@ -24,7 +24,7 @@ const style ={
 
   const handleDecrement = (title) => {
     const updatedCartItems = cartItems.map((item) => {
-      if (item.title === title && item.quantity > 0) {
+      if (item.title === title && item.quantity > 1) {
         return { ...item, quantity: item.quantity - 1 };
       }
       return item;
@@ -51,7 +51,7 @@ const style ={
         <div key={item.id} className='cart-item'>
           <h3 className='cart-title'>{item.title}</h3>
           <p className='cart-author'>{item.author}</p>
-          
+          <p className='cart-price'>Price: ${item.price * item.quantity}</p>
           <div className='cart-quantity'>
             <Button className='cart-button' onClick={() => handleIncrement(item.title)}>+</Button>
             <span className='cart-quantity-value'>{item.quantity}</span>

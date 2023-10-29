@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import AppContext from '../AppContext';
 
 
-function Add({key,title,author}){
+function Add({key,title,author,price}){
   const style = {
     textDecoration: 'none', // Remove the underline
     color: 'white', // Change the link color
@@ -28,7 +28,7 @@ function Add({key,title,author}){
       setCartItems(updatedCartItems);
     } else {
       // Add a new book to the cart
-      setCartItems([...cartItems, { title, author, quantity: 1 }]);
+      setCartItems([...cartItems, { title, author, price, quantity: 1 }]);
     }
   }
   

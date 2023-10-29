@@ -11,8 +11,8 @@ const Book = ({author,title,url,subtitle,image,key,price}) => {
       </header>
       <img className='image-model' src={image} alt='Book' />
       <p className='book-text'>{subtitle.slice(0,100)}{<a href={url}>Book</a>}</p>
-      <p className='price-tag'>Price of the book: {price}</p>
-      <Add key={key} title={title} author={author}/>
+      <p className='price-tag'>Price of the book: ${price}</p>
+      <Add key={key} title={title} author={author} price={price}/>
       
     </div>
   )

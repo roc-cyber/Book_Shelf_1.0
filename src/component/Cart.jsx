@@ -1,8 +1,15 @@
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import AppContext from '../AppContext';
+import { NavLink } from 'react-router-dom';
 
-function Cart() {
+
+function Cart({author}) {
+const style ={
+  color : 'white',
+  textDecoration: 'none'
+}
+
   const { cartItems, setCartItems } = useContext(AppContext);
 
   const handleIncrement = (title) => {
@@ -30,6 +37,11 @@ function Cart() {
     setCartItems(updatedCartItems);
   };
 
+  function handleOrder(){
+    console.log(`${author} book order is placed, Successfully!!!`);
+    //navigate('/order');
+  }
+
   return (
     <div className='cart-page'>
       <header>
@@ -51,7 +63,7 @@ function Cart() {
         </div>
       ))}
       <div className='order-section'>
-        <footer><Button className='placed-cart'>Placed order</Button></footer>
+        <footer><Button className='placed-cart' onClick={handleOrder}><NavLink to='/Order' style={style}>Placed Order</NavLink></Button></footer>
       </div>
     </div>
   );

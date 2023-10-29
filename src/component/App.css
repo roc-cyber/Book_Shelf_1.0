@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blueviolet;
+    color: rgb(25, 2, 47);
     font-weight: bold;
   }
   
@@ -339,4 +339,35 @@
 
 .cart-remove-button {
   margin-top: 10px; /* Add top margin to create spacing */
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Error-page {
+  text-align: center;
+  font-size: 3em; /* Increased font size */
+  color: #ff6347;
+  animation: shake 0.5s ease infinite;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  background: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

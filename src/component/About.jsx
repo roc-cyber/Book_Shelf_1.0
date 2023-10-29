@@ -8,6 +8,9 @@ export default function About() {
       <Header />
       <header>
         <h1>About</h1>
+
+        
+        
       </header>
     </div>
   )

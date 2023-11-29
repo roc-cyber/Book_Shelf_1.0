@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import AppContext from '../AppContext';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 function Cart({author,price}) {
@@ -9,7 +9,7 @@ const style ={
   color : 'white',
   textDecoration: 'none'
 }
-
+  const navigate = useNavigate();
   const { cartItems, setCartItems } = useContext(AppContext);
 
   const handleIncrement = (title) => {
@@ -63,7 +63,11 @@ const style ={
         </div>
       ))}
       <div className='order-section'>
-        <footer><Button className='placed-cart' onClick={handleOrder}><NavLink to='/Order' style={style}>Placed Order</NavLink></Button></footer>
+        <footer>
+          <Button className='placed-cart' onClick={handleOrder}><NavLink to='/Order' style={style}>Placed Order</NavLink></Button>
+          {' '}
+          <Button className='Back-cartToHome' onClick={()=> navigate(-1)}>Back To Home</Button>
+        </footer>
       </div>
     </div>
   );

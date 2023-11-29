@@ -308,8 +308,9 @@
 }
 
 .cart-title {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
+  font-style: normal;
 }
 
 .cart-author {
@@ -371,4 +372,9 @@
 .back-button:hover {
   background: #0056b3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-price{
+  font-weight: bolder;
+  font-size: larger;
 }

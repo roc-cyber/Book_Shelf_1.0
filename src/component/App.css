@@ -378,3 +378,34 @@
   font-weight: bolder;
   font-size: larger;
 }
+
+.about-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px; /* Adjust the max-width as needed */
+  padding: 20px;
+}
+
+/* Contact.css */
+
+.contact-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.contact-link {
+  margin-left: 5px;
+}
+
+.contact-link a {
+  color: #0077b5; /* LinkedIn color */
+  text-decoration: none;
+}
+
+.contact-link a:hover {
+  text-decoration: underline;
+}
+
+/* Add styles for Instagram link if needed */
+
